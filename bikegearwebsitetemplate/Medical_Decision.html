@@ -47,6 +47,9 @@ var age = document.getElementById("age_select").value
 var BMI = document.getElementById("BMI_select").value
 var p = document.getElementById("p_select").value
 
+
+
+
 var ans = switch_age(age,BMI,p);
 
 	if (ans == "0") 
@@ -62,11 +65,38 @@ var ans = switch_age(age,BMI,p);
 }
 
 
+function CheckValueError_age(age) {
+
+if (  (age <= 15.3) ) {
+return very low;
+}
+else if ((age >= 12.1) && (age <= 18.5)) {
+return significantly low;
+}
+else if ((age >= 15.8) && (age <= 21.7)) {
+return slightly low;
+}
+else if ((age >= 18.5) && (age <= 24.9)) {
+return neutral;
+}
+else if ((age >= 21.7) && (age <= 28.1) {
+return slightly high;
+}
+else if ((age >= 24.9) && (age <= 31.3)) {
+return significantly high;
+}
+else if ((age >= 28.1)) {
+return very high;
+}
+
+
 </script>
 
 <p>
 	<em>請選擇年齡：</em>
 	
+	<input type="text" name="age_text" value="">
+
 	<select id="age_select" name="age_select">
 	  <option value="very low">very low</option>
 	  <option value="moderately low">moderately low</option>
@@ -79,7 +109,9 @@ var ans = switch_age(age,BMI,p);
 </p>
 <p>
 	<em>請選擇BMI：</em>
-	
+
+	<input type="text" name="BMI_text" value="">
+
 	<select id="BMI_select" name="BMI_select">
 	  <option value="very low">very low</option>
 	  <option value="significantly low">significantly low</option>
@@ -93,7 +125,9 @@ var ans = switch_age(age,BMI,p);
 </p>
 <p>
 	<em>請選擇運動量：</em>
-	
+
+	<input type="text" name="p_text" value="">
+
 	<select id="p_select" name="p_select">
 	  <option value="inactive">inactive</option>
 	  <option value="sedentary">sedentary</option>
