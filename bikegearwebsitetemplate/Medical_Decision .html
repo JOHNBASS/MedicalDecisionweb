@@ -1,0 +1,1968 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>決策系統</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+
+		<link rel="stylesheet" href="css/bootstrap/css/bootstrap-responsive.css"/>
+		<script type="text/javascript" src="css/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="css/bootstrap/js/bootstrap.js"></script>
+
+		<!--link rel="stylesheet" href="css/bootstrap/css/bootstrap.css"/ -->
+
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+			<a href="index.html"> <img src="images/logo.gif" alt="LOGO" width="600" height="70"> </a>
+		</div>
+		<ul id="navigation">
+			<li>
+				<a href="index.html">home</a>
+			</li>
+			<li>
+				<a href="about.html">about</a>
+			</li>
+			<li >
+				<a href="blog.html">預測系統</a>
+			</li>
+			<li>
+				<a href="journey.html">模糊系統</a>
+			</li>
+		</ul>
+	</div>
+	<div id="body">
+		<div id="contents">
+			<img src="images/bmx-rider.jpg" alt="About Img">
+			<h1>決策問題</h1>
+
+
+<script language = JavaScript>
+
+function Decision() {
+
+var age = document.getElementById("age_select").value
+var BMI = document.getElementById("BMI_select").value
+var p = document.getElementById("p_select").value
+
+var ans = switch_age(age,BMI,p);
+
+	if (ans == "0") 
+	{
+		alert("您輸入有誤，請再檢查一次~!");
+	}
+	else
+	{
+		alert("ans: " + ans);
+	}
+
+
+}
+
+
+</script>
+
+<p>
+	<em>請選擇年齡：</em>
+	
+	<select id="age_select" name="age_select">
+	  <option value="very low">very low</option>
+	  <option value="moderately low">moderately low</option>
+	  <option value="not high">not high</option>
+	  <option value="high">high</option>
+	  <option value="moderately high">moderately high</option>
+	  <option value="very high">very high</option>
+  	</select>
+  
+</p>
+<p>
+	<em>請選擇BMI：</em>
+	
+	<select id="BMI_select" name="BMI_select">
+	  <option value="very low">very low</option>
+	  <option value="significantly low">significantly low</option>
+	  <option value="slightly low">slightly low</option>
+	  <option value="neutral">neutral</option>
+	  <option value="slightly high">slightly high</option>
+	  <option value="significantly high">significantly high</option>
+	  <option value="very high">very high</option>
+  	</select>
+  
+</p>
+<p>
+	<em>請選擇運動量：</em>
+	
+	<select id="p_select" name="p_select">
+	  <option value="inactive">inactive</option>
+	  <option value="sedentary">sedentary</option>
+	  <option value="lightly active">lightly active</option>
+	  <option value="normally active">normally active</option>
+	  <option value="moderately active">moderately active</option>
+	  <option value="very active">very active</option>
+	  <option value="extremely active">extremely active</option>
+  	</select>
+  
+</p>
+
+<br>&nbsp;</br>
+
+<button  type="button" onClick="Decision()">確認提交</button>
+
+
+		</div>
+		<div id="articles">
+				<p>
+				肥胖是一個被廣泛關注的關鍵的全球健康問題。據世界衛生組織，至少有280萬成年人每年死於超重或肥胖的結果。
+				它會導致肥胖對健康的危害。在全球範圍內，44％的糖尿病，23％的缺血性心臟疾病和某些癌症的7-41％，歸因於超重和肥胖。
+				世界衛生組織（WHO）報告，全球約一億成年人超重，超過300萬的肥胖。在澳大利亞的國民健康調查（2004-2005年），42.1％的成年男性和30.9％的成年女性被歸類為超重，25.6％的男性和24％的女性被列為肥胖。肥胖的流行並不普遍，只在高收入國家，但現在也很常見，在低收入和中等收入國家。
+			</p>
+			<ul>
+				<li>
+					<img src="images/biker.jpg" alt="Img">
+					<p>
+						模糊系統的核心的第一階段是建立模糊集的模糊化。
+						這涉及到的數值的轉換，可接受和不可接受的模糊值。
+						每個數據集的範圍從0到1。
+					</p>
+					<a href="fuzzy1.html" class="more">Read more >></a>
+				</li>
+				<li>
+					<img src="images/biker2.jpg" alt="Img">
+					<p>
+						模糊系統的核心的第二階段是在模糊推論工廠。
+						由於模糊推理，如不準確性，可靠性和緊湊的缺點，這種方法是不是決定性的。但是，它確實表明，模糊方法在衛生研究領域的貢獻整合的專業知識，在設計的if-then規則和語言輸入數據集有系統地處理決策產生語言的輸出值。
+					</p>
+					<a href="fuzzy2.html" class="more">Read more >></a>
+				</li>
+				<li class="last">
+					<img src="images/biker3.jpg" alt="Img">
+					<p>
+						糊系統的核心的第三階段是在解模糊。
+						經由模糊推論後所得的結果為一個模糊輸出量，一般的驅動器只能接受明確值作為訊號，而解模糊化的目的，就是將模糊推論所得到的結果，經由合理及適當的計算，將模糊集合轉換至明確值輸出。
+					</p>
+					<a href="fuzzy3.html" class="more">Read more >></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">
+		<ul id="connect">
+			<li>
+				<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook" title="Facebook"></a>
+			</li>
+			<li>
+				<a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter" title="Twitter"></a>
+			</li>
+			<li>
+				<a href="http://freewebsitetemplates.com/go/youtube/" target="_blank" class="vimeo" title="Vimeo"></a>
+			</li>
+			<li>
+				<a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus" title="Google+"></a>
+			</li>
+		</ul>
+		<div id="footnote">
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li class="active">
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="blog.html">預測系統</a>
+				</li>
+				<li>
+					<a href="index.html">模糊系統</a>
+				</li>
+			</ul>
+			<span>&copy; Copyright &copy; 2011. Company name all rights reserved.</span>
+		</div>
+	</div>
+</body>
+
+<script>
+
+
+function switch_age(data,bmi,p) {
+	alert("您選擇了: " + data+ ", " + bmi + " ," + p);
+		if (data == "very low")
+	{
+		if (bmi == "very low") 
+		{
+			if (p == "inactive")
+			{
+				return "slight increase";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "substantial increase";	
+			}	
+
+		}
+		else if (bmi == "significantly low") 
+		{
+			if (p == "inactive")
+			{
+				return "slight increase";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "substantial increase";	
+			}
+		}
+		else if (bmi == "slightly low") 
+		{
+			if (p == "inactive")
+			{
+				return "slight increase";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "neutral") 
+		{
+			if (p == "inactive")
+			{
+				return "neutral";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "neutral";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "very active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "slightly high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "slight increase";	
+			}
+		}
+		else if (bmi == "significantly high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "slight increase";	
+			}
+		}
+		else if (bmi == "very high") 
+		{
+						if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "slight increase";	
+			}
+		}
+
+	}
+		else if (data == "low") 
+	{
+		if (bmi == "very low") 
+		{
+			if (p == "inactive")
+			{
+				return "neutral";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "neutral";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}	
+
+		}
+		else if (bmi == "significantly low") 
+		{
+			if (p == "inactive")
+			{
+				return "neutral";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "neutral";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "slightly low") 
+		{
+			if (p == "inactive")
+			{
+				return "neutral";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "neutral";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "neutral") 
+		{
+			if (p == "inactive")
+			{
+				return "neutral";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "neutral";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "slightly high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "neutral";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "significantly high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "very high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+	}
+		else if (data == "not high") 
+	{
+		if (bmi == "very low") 
+		{
+			if (p == "inactive")
+			{
+				return "slight increase";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "substantial increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "substantial increase";	
+			}	
+
+		}
+		else if (bmi == "significantly low") 
+		{
+			if (p == "inactive")
+			{
+				return "slight increase";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "substantial increase";	
+			}
+		}
+		else if (bmi == "slightly low") 
+		{
+			if (p == "inactive")
+			{
+				return "slight increase";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "neutral") 
+		{
+			if (p == "inactive")
+			{
+				return "neutral";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "neutral";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "slightly high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "significantly high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "very high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+	}
+		else if (data == "high") 
+	{
+		if (bmi == "very low") 
+		{
+			if (p == "inactive")
+			{
+				return "slight increase";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "substantial increase";	
+			}	
+
+		}
+		else if (bmi == "significantly low") 
+		{
+			if (p == "inactive")
+			{
+				return "slight increase";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "substantial increase";	
+			}
+		}
+		else if (bmi == "slightly low") 
+		{
+			if (p == "inactive")
+			{
+				return "neutral";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "neutral") 
+		{
+			if (p == "inactive")
+			{
+				return "neutral";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "neutral";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "slightly high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "significantly high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "very high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+	}
+		else if (data == "moderately high") 
+	{
+		if (bmi == "very low") 
+		{
+			if (p == "inactive")
+			{
+				return "slight increase";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}	
+
+		}
+		else if (bmi == "significantly low") 
+		{
+			if (p == "inactive")
+			{
+				return "slight increase";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "slightly low") 
+		{
+			if (p == "inactive")
+			{
+				return "neutral";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "neutral";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "slight increase";	
+			}
+		}
+		else if (bmi == "neutral") 
+		{
+			if (p == "inactive")
+			{
+				return "neutral";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "neutral";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "slight increase";	
+			}
+		}
+		else if (bmi == "slightly high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "slight increase";	
+			}
+		}
+		else if (bmi == "significantly high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "slight decrease";	
+			}
+		}
+		else if (bmi == "very high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "slight decrease";	
+			}
+		}
+	}
+		else if (data == "very high") 
+	{
+		if (bmi == "very low") 
+		{
+			if (p == "inactive")
+			{
+				return "slight increase";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "normally active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "0";	
+			}
+			else if (p == "very active") 
+			{
+				return "0";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "0";	
+			}	
+
+		}
+		else if (bmi == "significantly low") 
+		{
+			if (p == "inactive")
+			{
+				return "neutral";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "neutral";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "normally active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "0";	
+			}
+			else if (p == "very active") 
+			{
+				return "0";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "0";	
+			}
+		}
+		else if (bmi == "slightly low") 
+		{
+			if (p == "inactive")
+			{
+				return "neutral";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "neutral";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "0";	
+			}
+			else if (p == "very active") 
+			{
+				return "0";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "0";	
+			}
+		}
+		else if (bmi == "neutral") 
+		{
+			if (p == "inactive")
+			{
+				return "neutral";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "neutral";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "0";	
+			}
+			else if (p == "very active") 
+			{
+				return "0";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "0";	
+			}
+		}
+		else if (bmi == "slightly high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "0";	
+			}
+			else if (p == "very active") 
+			{
+				return "0";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "0";	
+			}
+		}
+		else if (bmi == "significantly high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "normally active") 
+			{
+				return "significant decrease";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "0";	
+			}
+			else if (p == "very active") 
+			{
+				return "0";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "0";	
+			}
+		}
+		else if (bmi == "very high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "significant decrease";	
+			}
+			else if (p == "normally active") 
+			{
+				return "significant decrease";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "0";	
+			}
+			else if (p == "very active") 
+			{
+				return "0";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "0";	
+			}
+		}
+	}
+		else if (data == "moderately high") 
+	{
+		if (bmi == "very low") 
+		{
+			if (p == "inactive")
+			{
+				return "slight increase";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}	
+
+		}
+		else if (bmi == "significantly low") 
+		{
+			if (p == "inactive")
+			{
+				return "slight increase";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "slightly low") 
+		{
+			if (p == "inactive")
+			{
+				return "neutral";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "neutral";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "slight increase";	
+			}
+		}
+		else if (bmi == "neutral") 
+		{
+			if (p == "inactive")
+			{
+				return "neutral";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "neutral";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "slight increase";	
+			}
+		}
+		else if (bmi == "slightly high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "slight increase";	
+			}
+		}
+		else if (bmi == "significantly high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "slight decrease";	
+			}
+		}
+		else if (bmi == "very high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "slight decrease";	
+			}
+		}
+	else if (data == "moderately low") 
+	{
+		if (bmi == "very low") 
+		{
+			if (p == "inactive")
+			{
+				return "slight increase";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "substantial increase";	
+			}	
+
+		}
+		else if (bmi == "significantly low") 
+		{
+			if (p == "inactive")
+			{
+				return "slight increase";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "normally active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "significant increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "slightly low") 
+		{
+			if (p == "inactive")
+			{
+				return "neutral";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "neutral";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "neutral") 
+		{
+			if (p == "inactive")
+			{
+				return "neutral";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "neutral";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "slightly high") 
+		{
+			if (p == "inactive")
+			{
+				return "neutral";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "neutral";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "significant increase";	
+			}
+		}
+		else if (bmi == "significantly high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "slight increase";	
+			}
+		}
+		else if (bmi == "very high") 
+		{
+			if (p == "inactive")
+			{
+				return "slight decrease";	
+			}
+			else if (p == "sedentary") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "lightly active") 
+			{
+				return "slight decrease";	
+			}
+			else if (p == "normally active") 
+			{
+				return "neutral";	
+			}
+			else if (p == "moderately active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "very active") 
+			{
+				return "slight increase";	
+			}
+			else if (p == "extremely active") 
+			{
+				return "slight increase";	
+			}
+		}
+	}
+
+
+
+	}
+}
+
+
+</script>
+
+
+</html>

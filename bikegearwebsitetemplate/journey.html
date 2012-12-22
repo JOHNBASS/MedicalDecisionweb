@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>醫療決策 - 模糊理論</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+			<a href="index.html"> <img src="images/logo.gif" alt="LOGO" width="600" height="70"> </a>
+		</div>
+		<ul id="navigation">
+			<li>
+				<a href="index.html">home</a>
+			</li>
+			<li>
+				<a href="about.html">about</a>
+			</li>
+			<li>
+				<a href="Medical_Decision.html">預測系統</a>
+			</li>
+			<li class="active">
+				<a href="journey.html">模糊系統</a>
+			</li>
+		</ul>
+	</div>
+	<div id="body">
+		<div id="contents">
+			<div id="journey">
+				<img src="images/bikers-journey.jpg" alt="journey">
+				<h1>模糊系統架構</h1>
+				<p>
+					模糊理論最先是由美國加州大學查德（ L. A. Zadeh ）教授於 1965 年所發表的，他提出了模糊集合（ Fuzzy Set ）的觀念，強調以模糊邏輯來描述現實生活中事物性質的等級，以彌補傳統集合中，使用二值邏輯描述事物的缺點。模糊集合是取無限點的「歸屬函數」值描述一個集合，而在傳統集合中，則只取 0 與 1 兩個「特徵函數」值描述一個集合。依照模糊理論及結合專家系統（ Expert System ）所發展的模糊邏輯控制器（ Fuzzy Logic Controller ），表示專家或控制人員判斷的控制演算法。 1974 年 E. H. Mamdani 教授在蒸汽機自動運轉控制上成功地驗證了模糊邏輯控制器的優越性能，此後便造成一股研究風潮現今已經用在相當廣泛的領域，例如在控制系統、圖形識別（ PatternRecognition ）、決策分析（ Decision Analysis ）等方面上。尤其在控制系統上，近年來有相當多的學者在這方面投注心力 [10-15] 。
+				</p>
+				<p>
+					以往傳統控制設計控制器時，受控系統或受控程序都必須先將之數學模式化，之後才可以再根據所建立的數學模型去設計控制器。而模糊邏輯控制器則是根據模糊集合理論，所發展出的一項主流應用領域，它擺脫了傳統控制器設計方法必須先透過精確的數學模型來描述受控系統，才能獲得控制法則的侷限。例如：古典控制理論必須以微分方程（ Differential Equations ）或轉移函數（ Transfer Function ），而現代控制理論則必須以狀態空間（ State Space ）表示法描述受控系統，才能獲得控制法則 [12-20] 。
+				</p>
+				<p>
+					能夠突破此侷限的主要原因為：模糊邏輯控制器的設計理念非常地貼近人類的思維模式，它是利用語言變數（ Linguistic Variable ）所組成的條件式控制規則，模擬人類對受控系統的控制經驗或操作行為，然後經由模糊推論工場（ Fuzzy Inference Machine ）模仿人類下決策的近似推理模式，將這些條件式控制規則轉化成自動控制策略，以達到控制目標的一種控制器設計方法。對於複雜的系統或是難以用明確的數學模式來表達的系統，以直覺及經驗為基礎的模糊控制，亦可獲得極佳的控制效果。以下章節將對模糊控制理論與其架構加以解釋。
+				</p>
+				<p>
+					一般模糊系統包括四個部分：（ 1 ）模糊化（ Fuzzifierion ）、（ 2 ）模糊規則庫（ Fuzzy Rule Base ）、（ 3 ）模糊推論工場（ Fuzzy InferenceMechanism ）、（ 4 ）解模糊化（ Defuzzifierion ）。圖 1 所示為模糊控制系統的基本架構。當系統藉由感測器（ Sensor ）把明確的外界資訊輸入，藉由模糊化將之轉化為模糊資訊，經由控制器的模糊推論工場，依據所得到的模糊訊息，以及在模糊規則庫中預先存放設計者主觀擬定的法則，模擬人類思考決策的模式，解決其問題。最後解模糊化則將模糊推論工場所推論出的模糊資訊，轉化為外界所能接受的明確資訊。
+				</p>
+				<div class="center"><img src="images/F1.png" width="900"></div>
+			</div>
+		</div>
+		<div id="articles">
+			<p>
+				
+			</p>
+			<ul>
+				<li>
+					<img src="images/biker.jpg" alt="Img">
+					<p>
+						模糊系統的核心的第一階段是建立模糊集的模糊化。
+						這涉及到的數值的轉換，可接受和不可接受的模糊值。
+						每個數據集的範圍從0到1。
+					</p>
+					<a href="fuzzy1.html" class="more">Read more >></a>
+				</li>
+				<li>
+					<img src="images/biker2.jpg" alt="Img">
+					<p>
+						模糊系統的核心的第二階段是在模糊推論工廠。
+						由於模糊推理，如不準確性，可靠性和緊湊的缺點，這種方法是不是決定性的。但是，它確實表明，模糊方法在衛生研究領域的貢獻整合的專業知識，在設計的if-then規則和語言輸入數據集有系統地處理決策產生語言的輸出值。
+					</p>
+					<a href="fuzzy2.html" class="more">Read more >></a>
+				</li>
+				<li class="last">
+					<img src="images/biker3.jpg" alt="Img">
+					<p>
+						糊系統的核心的第三階段是在解模糊。
+						經由模糊推論後所得的結果為一個模糊輸出量，一般的驅動器只能接受明確值作為訊號，而解模糊化的目的，就是將模糊推論所得到的結果，經由合理及適當的計算，將模糊集合轉換至明確值輸出。
+					</p>
+					<a href="fuzzy3.html" class="more">Read more >></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">
+		<ul id="connect">
+			<li>
+				<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook" title="Facebook"></a>
+			</li>
+			<li>
+				<a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter" title="Twitter"></a>
+			</li>
+			<li>
+				<a href="http://freewebsitetemplates.com/go/youtube/" target="_blank" class="vimeo" title="Vimeo"></a>
+			</li>
+			<li>
+				<a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus" title="Google+"></a>
+			</li>
+		</ul>
+		<div id="footnote">
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="blog.html">Blog</a>
+				</li>
+				<li>
+					<a href="index.html">Gallery</a>
+				</li>
+			</ul>
+			<span>&copy; Copyright &copy; 2011. Company name all rights reserved.</span>
+		</div>
+	</div>
+</body>
+</html>
