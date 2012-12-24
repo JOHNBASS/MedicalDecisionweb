@@ -39,18 +39,123 @@
 			<h1>決策問題</h1>
 
 
+
+
+
+
 <script language = JavaScript>
+
+
+function CheckValueError_age(age) {
+
+if ((age <= 25)) {
+	return "very low";
+}
+else if ((age >= 15) && (age <= 35)) {
+	return "moderately low";
+}
+else if ((age >= 25) && (age <= 45)) {
+	return "low";
+}
+else if ((age >= 35) && (age <= 55)) {
+	return "not high";
+}
+else if ((age >= 45) && (age <= 65)) {
+	return "high";
+}
+else if ((age >= 55) && (age <= 75)) {
+	return "moderately high";
+}
+else if ((age >= 65)) {
+	return "very high";
+}
+
+}
+
+
+
+
+function CheckValueError_BMI(BMI) {
+
+if (  (BMI <= 15.3) ) {
+return "very low";
+}
+else if ((BMI >= 12.1) && (BMI <= 18.5)) {  
+return "significantly low";
+}
+else if ((BMI >= 15.8) && (BMI <= 21.7)) {
+return "slightly low";
+}
+else if ((BMI >= 18.5) && (BMI <= 24.9)) {
+return "neutral";
+}
+else if ((BMI >= 21.7) && (BMI <= 28.1)) {
+return "slightly high";
+}
+else if ((BMI >= 24.9) && (BMI <= 31.3)) {
+return "significantly high";
+}
+else if ((BMI >= 28.1)) {
+return "very high";
+}
+
+}
+
+function CheckValueError_p(p) {
+
+if ((p <= -30) ) {
+return "very low";
+}
+else if ((p >= -45) && (p <= -15)) {  
+return "significantly low";
+}
+else if ((p >= -30) && (p <= 0)) {
+return "slightly low";
+}
+else if ((p >= -15) && (p <= 15)) {
+return "neutral";
+}
+else if ((p >= 0) && (p <= 30)) {
+return "slightly high";
+}
+else if ((p >= 15) && (p <= 45)) {
+return "significantly high";
+}
+else if ((p >= 30)) {
+return "very high";
+}
+
+}
+
+</script>
+
+
+
+<script language = JavaScript>
+
+
 
 function Decision() {
 
-var age = document.getElementById("age_select").value
-var BMI = document.getElementById("BMI_select").value
-var p = document.getElementById("p_select").value
+var age = document.getElementById("age_text").value
+var BMI = document.getElementById("BMI_text").value
+var p = document.getElementById("p_text").value
 
+// var age = document.getElementById("age_select").value
+// var BMI = document.getElementById("BMI_select").value
+// var p = document.getElementById("p_select").value
 
+var age_textValue,BMI_textValue,p_textValue;
 
+//alert("test:" + age+BMI+p);
 
-var ans = switch_age(age,BMI,p);
+age_textValue = CheckValueError_age(age);
+BMI_textValue = CheckValueError_BMI(BMI); 
+p_textValue = CheckValueError_p(p); 
+
+//alert("test:" +age_textValue+", "+BMI_textValue+", "+p_textValue);
+
+var ans = switch_age(age_textValue,BMI_textValue,p_textValue);
 
 	if (ans == "0") 
 	{
@@ -63,39 +168,13 @@ var ans = switch_age(age,BMI,p);
 
 
 }
-
-
-function CheckValueError_age(age) {
-
-if (  (age <= 15.3) ) {
-return very low;
-}
-else if ((age >= 12.1) && (age <= 18.5)) {
-return significantly low;
-}
-else if ((age >= 15.8) && (age <= 21.7)) {
-return slightly low;
-}
-else if ((age >= 18.5) && (age <= 24.9)) {
-return neutral;
-}
-else if ((age >= 21.7) && (age <= 28.1) {
-return slightly high;
-}
-else if ((age >= 24.9) && (age <= 31.3)) {
-return significantly high;
-}
-else if ((age >= 28.1)) {
-return very high;
-}
-
-
 </script>
+
 
 <p>
 	<em>請選擇年齡：</em>
-	
-	<input type="text" name="age_text" value="">
+	15~75
+	<input type="text" id="age_text" name="age_text" value="">
 
 	<select id="age_select" name="age_select">
 	  <option value="very low">very low</option>
@@ -109,8 +188,8 @@ return very high;
 </p>
 <p>
 	<em>請選擇BMI：</em>
-
-	<input type="text" name="BMI_text" value="">
+	12.1~31.3
+	<input type="text" id="BMI_text" name="BMI_text" value="">
 
 	<select id="BMI_select" name="BMI_select">
 	  <option value="very low">very low</option>
@@ -125,8 +204,8 @@ return very high;
 </p>
 <p>
 	<em>請選擇運動量：</em>
-
-	<input type="text" name="p_text" value="">
+	-45~45
+	<input type="text" id="p_text" name="p_text" value="">
 
 	<select id="p_select" name="p_select">
 	  <option value="inactive">inactive</option>
@@ -1371,7 +1450,7 @@ function switch_age(data,bmi,p) {
 			{
 				return "neutral";	
 			}
-			else if (p == "lightly active") 
+			else if (p=="lightly active") 
 			{
 				return "slight increase";	
 			}
@@ -1997,6 +2076,7 @@ function switch_age(data,bmi,p) {
 
 
 </script>
+
 
 
 </html>
