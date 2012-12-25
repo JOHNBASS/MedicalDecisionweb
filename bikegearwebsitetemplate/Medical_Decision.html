@@ -150,6 +150,13 @@ var age_textValue,BMI_textValue,p_textValue;
 
 //alert("test:" + age+BMI+p);
 
+if ((age == "")  || (BMI == "") || (p == "")) {
+alert("您輸入有誤，請再檢查一次~!");
+}
+else
+
+{
+
 age_textValue = CheckValueError_age(age);
 BMI_textValue = CheckValueError_BMI(BMI); 
 p_textValue = CheckValueError_p(p); 
@@ -169,30 +176,33 @@ var ans = switch_age(age_textValue,BMI_textValue,p_textValue);
 
 
 }
+
+}
+
 </script>
 
 
 <p>
 	<em>請選擇年齡：</em>
-	15~75
-	<input type="text" id="age_text" name="age_text" value="">
+	<br>15~75</br>
+	<input type="text" id="age_text" name="age_text" value="" >
 
-	<select id="age_select" name="age_select">
+<!-- 	<select id="age_select" name="age_select">
 	  <option value="very low">very low</option>
 	  <option value="moderately low">moderately low</option>
 	  <option value="not high">not high</option>
 	  <option value="high">high</option>
 	  <option value="moderately high">moderately high</option>
 	  <option value="very high">very high</option>
-  	</select>
+  	</select> -->
   
 </p>
 <p>
 	<em>請選擇BMI：</em>
-	12.1~31.3
+	<br>12.1~31.3</br>
 	<input type="text" id="BMI_text" name="BMI_text" value="">
 
-	<select id="BMI_select" name="BMI_select">
+<!-- 	<select id="BMI_select" name="BMI_select">
 	  <option value="very low">very low</option>
 	  <option value="significantly low">significantly low</option>
 	  <option value="slightly low">slightly low</option>
@@ -200,15 +210,15 @@ var ans = switch_age(age_textValue,BMI_textValue,p_textValue);
 	  <option value="slightly high">slightly high</option>
 	  <option value="significantly high">significantly high</option>
 	  <option value="very high">very high</option>
-  	</select>
+  	</select> -->
   
 </p>
 <p>
 	<em>請選擇運動量：</em>
-	-45~45
+	<br>-45~45</br>
 	<input type="text" id="p_text" name="p_text" value="">
 
-	<select id="p_select" name="p_select">
+<!-- 	<select id="p_select" name="p_select">
 	  <option value="inactive">inactive</option>
 	  <option value="sedentary">sedentary</option>
 	  <option value="lightly active">lightly active</option>
@@ -216,7 +226,7 @@ var ans = switch_age(age_textValue,BMI_textValue,p_textValue);
 	  <option value="moderately active">moderately active</option>
 	  <option value="very active">very active</option>
 	  <option value="extremely active">extremely active</option>
-  	</select>
+  	</select> -->
   
 </p>
 
@@ -300,7 +310,7 @@ var ans = switch_age(age_textValue,BMI_textValue,p_textValue);
 
 
 function switch_age(data,bmi,p) {
-	alert("您選擇了: " + data+ ", " + bmi + " ," + p);
+	alert("您選擇了: " + data+ " , " + bmi + " , " + p);
 		if (data == "very low")
 	{
 		if (bmi == "very low") 
