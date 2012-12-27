@@ -136,11 +136,29 @@ return "very high";
 
 <script language = JavaScript>
 
+
+function BodyMassIndex(H,W) {
+
+var bmi ;
+
+bmi = W / ((H * 0.01) ^ 2);
+
+return bmi;
+
+}
+
 function Decision() {
 
 var age = document.getElementById("age_text").value
 var BMI = document.getElementById("BMI_text").value
 var p = document.getElementById("p_text").value
+
+var h = document.getElementById("height_text").value
+var w = document.getElementById("width_text").value
+
+BMI = BodyMassIndex(h,w).toFixed(1);
+
+alert(BMI);
 
 // var age = document.getElementById("age_select").value
 // var BMI = document.getElementById("BMI_select").value
@@ -183,7 +201,7 @@ var ans = switch_age(age_textValue,BMI_textValue,p_textValue);
 
 
 <p>
-	<em>請選擇年齡：</em>
+	<em>請輸入年齡：</em>
 	<br>15~75</br>
 	<input type="text" id="age_text" name="age_text" value="" >
 
@@ -198,7 +216,19 @@ var ans = switch_age(age_textValue,BMI_textValue,p_textValue);
   
 </p>
 <p>
-	<em>請選擇BMI：</em>
+	<em>請輸入身高：(cm)</em>
+	<input type="text" id="height_text" name="height_text" value="">
+
+</p>
+
+<p>
+	<em>請輸入體重：(KG)</em>
+	<input type="text" id="width_text" name="width_text" value="">
+
+</p>
+
+<p>
+<em>算出的BMI：</em>
 	<br>12.1~31.3</br>
 	<input type="text" id="BMI_text" name="BMI_text" value="">
 
@@ -211,8 +241,8 @@ var ans = switch_age(age_textValue,BMI_textValue,p_textValue);
 	  <option value="significantly high">significantly high</option>
 	  <option value="very high">very high</option>
   	</select> -->
-  
-</p>
+</p>  
+
 <p>
 	<em>請選擇運動量：</em>
 	<br>-45~45</br>
