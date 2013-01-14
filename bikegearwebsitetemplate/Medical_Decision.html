@@ -184,7 +184,7 @@ p_textValue = CheckValueError_p(p);
 
 		alert("test:" +age_textValue + ", "+BMI_textValue+", "+p_textValue);
 
-		var ans = switch_age("moderately low","significantly low","inactive");
+		var ans = switch_age(age_textValue,BMI_textValue,p_textValue);
 		
 		alert("ans: " + ans);
 
