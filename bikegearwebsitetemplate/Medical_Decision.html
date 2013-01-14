@@ -73,11 +73,9 @@ else if ((age >= 65)) {
 }
 
 
-
-
 function CheckValueError_BMI(BMI) {
 
-if (  (BMI <= 15.3) ) {
+if ((BMI <= 15.3)) {
 return "very low";
 }
 else if ((BMI >= 12.1) && (BMI <= 18.5)) {  
@@ -104,25 +102,25 @@ return "very high";
 function CheckValueError_p(p) {
 
 if ((p <= -30) ) {
-return "very low";
+return "inactive";
 }
 else if ((p >= -45) && (p <= -15)) {  
-return "significantly low";
+return "sedentary";
 }
 else if ((p >= -30) && (p <= 0)) {
-return "slightly low";
+return "lightly active";
 }
 else if ((p >= -15) && (p <= 15)) {
-return "neutral";
+return "normally active";
 }
 else if ((p >= 0) && (p <= 30)) {
-return "slightly high";
+return "moderately active";
 }
 else if ((p >= 15) && (p <= 45)) {
-return "significantly high";
+return "very active";
 }
 else if ((p >= 30)) {
-return "very high";
+return "extremely active";
 }
 
 }
@@ -180,9 +178,7 @@ age_textValue = CheckValueError_age(age);
 BMI_textValue = CheckValueError_BMI(BMI); 
 p_textValue = CheckValueError_p(p); 
 
-
-
-		alert("test:" +age_textValue + ", "+BMI_textValue+", "+p_textValue);
+		//alert("test: " +age_textValue + ", "+BMI_textValue+", "+p_textValue);
 
 		var ans = switch_age(age_textValue,BMI_textValue,p_textValue);
 		
@@ -383,8 +379,6 @@ function switch_age(data,bmi,p)
 {
 
 	alert("您選擇了: " + data + " , " + bmi + " , " + p);
-
-
 
 	if (data == "very low")
 	{
@@ -2155,10 +2149,6 @@ function switch_age(data,bmi,p)
 			}
 		}
 	}
-
-
-	
-
 }
 
 </script>
