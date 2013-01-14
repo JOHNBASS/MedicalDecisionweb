@@ -40,9 +40,6 @@
 
 
 
-
-
-
 <script language = JavaScript>
 
 
@@ -150,7 +147,9 @@ return bmi;
 function Decision() {
 
 var age = document.getElementById("age_text").value
-var BMI = document.getElementById("BMI_text").value
+//var BMIdisplay = document.getElementById("BMI_text").value
+
+var BMI;
 var p = document.getElementById("p_text").value
 
 var h = document.getElementById("height_text").value
@@ -158,7 +157,10 @@ var w = document.getElementById("width_text").value
 
 BMI = BodyMassIndex(h,w).toFixed(1);
 
-alert(BMI);
+
+document.getElementById("BMI_text").innerHTML = "<span style='color:#ffffff'>" + BMI + "</span>";
+
+//alert(BMI);
 
 // var age = document.getElementById("age_select").value
 // var BMI = document.getElementById("BMI_select").value
@@ -172,26 +174,60 @@ if ((age == "")  || (BMI == "") || (p == "")) {
 alert("您輸入有誤，請再檢查一次~!");
 }
 else
-
 {
 
 age_textValue = CheckValueError_age(age);
 BMI_textValue = CheckValueError_BMI(BMI); 
 p_textValue = CheckValueError_p(p); 
 
-//alert("test:" +age_textValue+", "+BMI_textValue+", "+p_textValue);
 
-var ans = switch_age(age_textValue,BMI_textValue,p_textValue);
 
-	if (ans == "0") 
-	{
-		alert("您輸入有誤，請再檢查一次~!");
-	}
-	else
-	{
+		alert("test:" +age_textValue + ", "+BMI_textValue+", "+p_textValue);
+
+		var ans = switch_age(age_textValue,BMI_textValue,p_textValue);
+		
 		alert("ans: " + ans);
-	}
 
+		// var data1 = 90.995;
+		// var data2;
+
+		// if(ans == "substantial decrease")
+		// {
+		// 	data2 = data1/1.84;
+			
+		// }
+		// else if(ans == "significant decrease")
+		// {
+		// 	data2 = data1/(1.84 + 1.84);
+
+		// }
+		// else if (ans == "slight decrease") 
+		// {
+		// 	data2 = data1/(1.84 + 1.84 + 3.44);
+
+		// }
+		// else if (ans == "neutral") 
+		// {
+		// 	data2 = data1/(1.84 + 1.84 + 3.44 + 3.44);
+
+		// }
+		// else if (ans == "slight increase") 
+		// {
+		// 	data2 = data1/(1.84 + 1.84 + 3.44 + 3.44);
+
+		// }
+		// else if (ans == "significant increase") 
+		// {
+		// 	data2 = data1/(1.84 + 1.84 + 3.44 + 3.44);
+
+		// }
+		// else if (ans == "substantial increase") 
+		// {
+		// 	data2 = data1/(1.84 + 1.84 + 3.44 + 3.44);
+
+		// }
+
+		//  alert("大約: " + data2);
 
 }
 
@@ -230,7 +266,12 @@ var ans = switch_age(age_textValue,BMI_textValue,p_textValue);
 <p>
 <em>算出的BMI：</em>
 	<br>12.1~31.3</br>
-	<input type="text" id="BMI_text" name="BMI_text" value="">
+
+<p id="BMI_text">
+結果是：
+</p>
+
+<!--	<input type="text" id="BMI_text" name="BMI_text" value="">-->
 
 <!-- 	<select id="BMI_select" name="BMI_select">
 	  <option value="very low">very low</option>
@@ -338,9 +379,9 @@ var ans = switch_age(age_textValue,BMI_textValue,p_textValue);
 
 <script>
 
-
 function switch_age(data,bmi,p) {
-	alert("您選擇了: " + data+ " , " + bmi + " , " + p);
+
+	alert("您選擇了: " + data + " , " + bmi + " , " + p);
 		if (data == "very low")
 	{
 		if (bmi == "very low") 
