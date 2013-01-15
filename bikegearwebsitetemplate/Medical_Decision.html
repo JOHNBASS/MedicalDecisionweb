@@ -156,7 +156,7 @@ var w = document.getElementById("width_text").value
 BMI = BodyMassIndex(h,w).toFixed(1);
 
 
-document.getElementById("BMI_text").innerHTML = "<span style='color:#ffffff'>" + BMI + "</span>";
+document.getElementById("BMI_text").innerHTML = "<span style='color:#FF3030; font-size:150%;'>" + "您的BMI:" + BMI + "</span>";
 
 //alert(BMI);
 
@@ -169,7 +169,7 @@ var age_textValue,BMI_textValue,p_textValue;
 //alert("test:" + age+BMI+p);
 
 if ((age == "")  || (BMI == "") || (p == "")) {
-alert("您輸入有誤，請再檢查一次~!");
+alert("您輸入有少，請再檢查一次~!");
 }
 else
 {
@@ -223,7 +223,7 @@ p_textValue = CheckValueError_p(p);
 
 		}
 
-		 alert("大約需要攝取: " + data2 + "%");
+		 alert("大約需要攝取: " + data2.toFixed(2) + "%");
 
 }
 
@@ -233,8 +233,8 @@ p_textValue = CheckValueError_p(p);
 
 
 <p>
-	<em>請輸入年齡：</em>
-	<br>15~75</br>
+	<em style="background-color:#3D3D3D;">請輸入年齡：</em>
+	<br>範圍:15~75</br>
 	<input type="text" id="age_text" name="age_text" value="" >
 
 <!-- 	<select id="age_select" name="age_select">
@@ -248,20 +248,20 @@ p_textValue = CheckValueError_p(p);
   
 </p>
 <p>
-	<em>請輸入身高：(cm)</em>
+	<em style="background-color:#3D3D3D;">請輸入身高：(cm)</em>
 	<input type="text" id="height_text" name="height_text" value="">
 
 </p>
 
 <p>
-	<em>請輸入體重：(KG)</em>
+	<em style="background-color:#3D3D3D;">請輸入體重：(KG)</em>
 	<input type="text" id="width_text" name="width_text" value="">
 
 </p>
 
 <p>
 <em>算出的BMI：</em>
-	<br>12.1~31.3</br>
+<br>範圍:12.1~31.3</br>
 
 <p id="BMI_text">
 結果是：
@@ -281,8 +281,8 @@ p_textValue = CheckValueError_p(p);
 </p>  
 
 <p>
-	<em>請選擇運動量：</em>
-	<br>-45~45</br>
+	<em style="background-color:#3D3D3D;">請選擇運動量：</em>
+	<br>範圍:-45~45</br>
 	<input type="text" id="p_text" name="p_text" value="">
 
 <!-- 	<select id="p_select" name="p_select">
